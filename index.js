@@ -8,6 +8,4 @@ const indexRoutes = require("./routes/index");
 
 app.use("/", indexRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The color game server is starting!"); 
-});
+app.listen(process.env.PORT || 8888);
